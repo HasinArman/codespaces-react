@@ -1,70 +1,50 @@
-# GitHub Codespaces ♥️ React
+# Data-Driven Web Application
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+## Overview
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+This project demonstrates the creation of a data-driven web application using Flask as the backend framework and React for the frontend. The application visualizes data from a CSV file containing health-related information.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## Setting Up the Project
 
-This project was bootstrapped for you with [Vite](https://vitejs.dev/).
+1. **Flask Backend:**
+   - Created a Flask backend with a simple API endpoint (`/api/data`) to serve data from a CSV file.
+   - Installed necessary dependencies (`Flask`, `pandas`) in a virtual environment.
 
-## Available Scripts
+2. **React Frontend:**
+   - Set up a React frontend in the `frontend` directory.
+   - Used `create-react-app` to create a new React app.
+   - Integrated Chart.js for data visualization.
+   - Fetched and processed data from the Flask API endpoint.
 
-In the project directory, you can run:
+3. **Dataset:**
+   - Uploaded the dataset file (`HeartFactorsDiseaseByHasin.csv`) to the project.
 
-### `npm start`
+4. **File Structure:**
+   - Organized project files into appropriate directories (`data`, `frontend`, `static`, `templates`, etc.).
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+5. **Advantages:**
+   - **Separation of Concerns:** By using Flask for the backend and React for the frontend, the project benefits from a clear separation of concerns, making it easier to maintain and scale.
+   - **Data Visualization:** Utilized Chart.js for efficient and customizable data visualization within the web application.
+   - **Clean Code Structure:** Organized the project into meaningful directories, improving code readability and maintainability.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000/](http://localhost:3000/) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+## How to Run the Project
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+1. Activate the virtual environment:
+   source venv/bin/activate 
+2. Install Flask and Pandas:
+   pip install flask pandas
+3. Run Flask App:
+   python app.py
+4. In another terminal tab, navigate to the frontend directory and run the React app:
+   cd frontend
+   npm install
+   npm start
+   Open the application in a web browser at http://localhost:3000.
 
-### `npm test`
+This README provides an overview of the project, explains its structure, and includes instructions on how to set up and run the application. Adjust it as needed for your specific project details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Learn More
-
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
-
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
-
-### Advanced Configuration
-
-This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
-
-### Deployment
-
-This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
-
-### Troubleshooting
-
-This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
