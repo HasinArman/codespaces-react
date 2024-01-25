@@ -37,9 +37,9 @@ This project demonstrates the creation of a data-driven web application using Fl
    python app.py
 4. In another terminal tab, navigate to the frontend directory and run the React app:
    cd frontend
-   npm install
-   npm start
-   Open the application in a web browser at http://localhost:3000.
+   , npm install
+   , npm start
+5. Open the application in a web browser at http://localhost:3000.
 
 This README provides an overview of the project, explains its structure, and includes instructions on how to set up and run the application. Adjust it as needed for your specific project details.
 
